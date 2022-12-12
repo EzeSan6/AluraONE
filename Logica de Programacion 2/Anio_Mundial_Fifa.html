@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION</h1>
+<h3>Edición Mundial</h3>
+
+<script>
+	
+	function saltarLinea() {
+		
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+	var anioMundial = 1930;
+	var limite = parseInt(prompt("Ingrese el año límite para calcular"));
+	//alert("Hubo mundial de la FIFA en el año " + anioMundial);
+
+	while(anioMundial <= limite){
+
+		imprimir("Hubo mundial de la FIFA en el año " + anioMundial);
+		anioMundial = anioMundial + 4;
+	}
+
+	imprimir("Fin :P");
+</script>

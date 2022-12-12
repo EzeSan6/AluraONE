@@ -1,0 +1,79 @@
+<meta  charset="UTF-8">
+
+<h1>PROGRAMA</h1>
+
+<script>
+ function mostrarAlerta(mensaje) {
+        alert("***" + mensaje + "***");
+    }
+
+    var edadEze = 19;
+    var edadDami = 33;
+    var difEdades = edadDami - edadEze;
+
+    imprimir("Nuestra diferencia de edad es " + difEdades + " años.");
+    function saltarLinea() {
+
+		document.write("<br>");
+	
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+/*
+	var saltoLinea1 = "<br>";
+	var saltoLinea2 = "<br> <br>";
+
+	imprimir("Hola amigos");
+
+
+	// Muestra la edad de Eze
+	imprimir("La edad de Eze es...");
+	// document.write("<br>");
+	imprimir("20" + 17);
+	document.write(2 + 17);
+	document.write(saltoLinea2);
+
+	saltarLinea();
+
+	document.write("El año de nacimiento de Eze es... <br>");
+	document.write(2022-19);
+	document.write(saltoLinea2);
+
+
+	document.write("El promedio de edad de Dionisia, Vicky y Jose es...<br>");
+	document.write((60+30+57)/3);
+	document.write(saltoLinea2);
+
+
+	document.write("La suma de las edades de Dionisia, Vicky y Jose es...<br>"/*+ (60+30+57));
+	//document.write(saltoLinea);
+	document.write(60+30+57);
+	document.write(saltoLinea2);
+
+
+	var anio = 2022;
+
+	document.write("Dionisia tiene: " + (anio-1962) + " años.<br>");
+
+	anio = 2003
+
+	document.write("Jose tiene: " + (anio-1965) + " años.<br>");
+	document.write("Vicky tiene: " + (anio-1992) + " años.<br>");	
+
+	var edadDionisia = 60;
+	var edadVicky = 30;
+	var edadJose = 57;
+
+	var nom1 = "Dionisia"
+	var nom2 = "Jose";
+	var nom3 = "Vicky"
+
+	var promedio = (edadDionisia+edadJose+edadVicky)/3;
+
+	document.write("El promedio de edad de " + nom1 + ", " + nom2 + " y " + nom3 + " es: " + Math.round(promedio)/*redondea + " años");
+*/
+</script>

@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULAR IMC</h1>
+
+<script>
+
+function saltarLinea() {
+
+    document.write("<br>");    
+    document.write("<br>");        
+    document.write("<br>");
+}
+
+function imprimir(frase) {
+    document.write("<big>" + frase + "</big>");
+    saltarLinea();
+}
+
+function calcularImc(peso,altura) {
+ 
+   return (peso / (altura*altura));
+
+}
+
+var intro = "Usted tiene ";
+nombre = prompt("Informe su nombre");
+pesoInformado = prompt(nombre + ", informe su peso");
+alturaInformado = prompt(nombre + ", informe su altura");
+
+imcCalculado = calcularImc(pesoInformado,alturaInformado)
+
+imprimir(nombre + ", su IMC calculado es: " + imcCalculado);
+
+  if (imcCalculado < 18.5){
+    
+    imprimir(intro + "Insuficiencia ponderal");
+
+} if (imcCalculado >= 18.5 && imcCalculado < 25){
+    
+    imprimir(intro + "Intervalo normal");
+
+} if (imcCalculado >= 25 && imcCalculado < 30) {
+    
+    imprimir(intro + "Sobrepeso");
+
+} if (imcCalculado >= 30) {
+    
+    imprimir(intro + "Obesidad");
+
+}
+
+</script>
